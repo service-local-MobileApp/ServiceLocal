@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/purple"
+    >
+
+    <!-- Barre de recherche -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rechercher un service..."
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:drawablePadding="8dp"
+        android:padding="6dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="12dp"
+        android:inputType="text" />
+
+    <!-- Filtres -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginBottom="12dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Filter"
+            android:background="@drawable/rounded_button"
+            android:drawablePadding="8dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <!-- Liste des résultats -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="@drawable/rounded_background"
+        android:scrollbars="vertical" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <!-- Bouton Profil -->
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="home"
+            android:textColor="#FFFFFFFF"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:autoSizeTextType="uniform"/>
+
+        <Button
+            android:background="@drawable/rounded_button"
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#FFFFFFFF"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:autoSizeTextType="uniform"/>
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="Profil"
+        android:textColor="#FFFFFFFF"
+        android:autoSizeTextType="uniform"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+</LinearLayout>
