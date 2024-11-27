@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Contenu principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Titre principal -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenue dans Service Local"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bouton de navigation -->
+        <Button
+            android:id="@+id/btn_navigate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Naviguer"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Zone d'informations -->
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explorez les services autour de vous"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            />
+
+        <!-- Placeholder pour un futur contenu (exemple : liste ou carte) -->
+        <FrameLayout
+            android:id="@+id/content_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+           />
+
+        <!-- Bouton profil -->
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mon Profil"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</FrameLayout>
